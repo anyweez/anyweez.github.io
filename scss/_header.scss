@@ -1,0 +1,53 @@
+$profile-pic-size: 200px;
+
+header {
+    @include grid-row();
+
+    margin-top: 60px;
+
+    section#profile {
+        @include grid-column($layout-side-column);
+        text-align: right;
+
+        img {
+            @include breakpoint($breakpoint-large) {
+                width: $profile-pic-size;
+                min-width: $profile-pic-size;
+                height: $profile-pic-size;
+                min-height: $profile-pic-size;
+            }
+
+            // width: $profile-pic-size * 0.6;
+            // min-width: $profile-pic-size * 0.6;
+            // height: $profile-pic-size * 0.6;
+            // min-height: $profile-pic-size * 0.6;
+
+            margin-top: 4%;
+            border: 1px solid $color-font-main;
+            box-shadow: 1px 2px 2px lighten($color-font-main, 50%);
+        }
+    }
+
+    section {
+        @include grid-column($layout-main-column);
+        // height: $profile-pic-size;
+
+        h1 {
+            @include breakpoint($breakpoint-large) {
+                margin-top: 4%;
+                font-size: 2.8em;
+            }
+
+            margin-top: 2%; 
+            margin-bottom: 2%;
+            font-size: 1.6em;
+            font-family: 'Slackey', cursive;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 1.7em;
+            margin: 5px 0;
+        }
+    }
+}

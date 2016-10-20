@@ -1,0 +1,165 @@
+[
+    {
+        "title": "The Cave of Wonders",
+        "category": "WRITING",
+        "date": "2016-10",
+        "description": "The start of a series where I lay out the most significant internet-age trends that'll have massive (potentially detrimental) social effects on American society. The necessary first steps are education and civic engagement.",
+        "url": "https://medium.com/@anyweez/the-cave-of-wonders-e670477ff290",
+        "highlight": true
+    },
+    {
+        "title": "sor launched!",
+        "category": "CODE",
+        "date": "2016-10",
+        "description": "Sor is an attempt to create a platform for practicing Javascript with the least amount of user overhead possible. My goal was to take advantage of existing tools (IDE's, unit testing frameworks, etc) to make the tool easy to use and maintain.",
+        "url": "https://sorjs.com",
+        "highlight": true
+    },
+    {
+        "title": "New site!",
+        "category": "CODE",
+        "date": "2016-10",
+        "description": "Yet another edition of pretty much the same website! Like most of the software I've been working on recently, the goal of this redesign is to *simplify* by moving much of the content itself off of the site and to really use this domain as a landing page for content elsewhere.",
+        "url": "https://medium.com/@anyweez/the-cave-of-wonders-e670477ff290"
+    },
+    {
+        "title": "In Over Our Heads: The Great Depression",
+        "category": "PODCAST",
+        "date": "2016-10",
+        "description": "Another day, another knowledge-infused conversation about history. Here we go.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "Elite Dangerous Paths",
+        "category": "CODE",
+        "date": "2016-10",
+        "description": "You know how when you go for a while without practicing your data structures you just feel an undying urge to put them to good use? The frontend for this project was my first foray into React and Redux, and the backend was designed to perform real-time routing among the millions and millions of discovered galaxy in the absolutely massive world of [Elite Dangeorus](https://www.elitedangerous.com/).",
+        "url": "https://github.com/anyweez/edpaths"
+    },
+    {
+        "title": "Dodona",
+        "category": "CODE",
+        "date": "2016-09",
+        "description": "\"Bots\", they say. \"They're gonna be huge\", they say. I'm still a tad skeptical, but I do like the idea of building one. This was a weekend project to create a [League of Legends](http://na.leagueoflegends.com/) bot that can automatically give you basic intel on the team you're matched up against once the match begins. It is build using the Discord (Slack for gamers) API. It's still not ready for production but works really well for me!",
+        "url": "https://github.com/anyweez/edpaths"
+    },
+    {
+        "title": "In Over Our Heads: Deserts",
+        "category": "PODCAST",
+        "date": "2016-08",
+        "description": "You may find this one a bit dry.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "Harold",
+        "category": "CODE",
+        "date": "2016-08",
+        "description": "Like many of my projects, the key goal of Harold is to experiment in reduced complexity. Harold is an API server I designed for my class that makes it really easy to build endpoints for frontends. It's a perpetual work in progress but it continues to get simpler and easier to use over time.",
+        "url": "https://github.com/anyweez/harold"
+    },
+    {
+        "title": "In Over Our Heads: Agrarian Revolution",
+        "category": "PODCAST",
+        "date": "2016-08",
+        "description": "Food for thought, if nothing else.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "Glimpse",
+        "category": "CODE",
+        "date": "2016-07",
+        "description": "I've been wanting to write Glimpse for a really long time. It's a virtual world generator + simulator that I'm hoping to make fun to watch. So far I've placed most of the emphasis on world *generation* (terrain, water tables, etc), but the latest commits have been experiments in population dynamics.",
+        "url": "https://github.com/anyweez/glimpse"
+    },
+    {
+        "title": "In Over Our Heads: Hibernation",
+        "category": "PODCAST",
+        "date": "2016-06",
+        "description": "I get tired just thinking about it, but it turns out that its not just bears that take pretty long naps.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Tornadoes",
+        "category": "PODCAST",
+        "date": "2016-06",
+        "description": "Talking about the weather is a breeze when you're with a guy like Seth.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Napalm",
+        "category": "PODCAST",
+        "date": "2016-06",
+        "description": "Napalm is among the nastiest of goos. The conversation gets a bit heated as we discuss international war treaties, otherworldly temperatures, and other bedtime stories.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Antimatter",
+        "category": "PODCAST",
+        "date": "2016-03",
+        "description": ".",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Aquifers",
+        "category": "PODCAST",
+        "date": "2016-02",
+        "description": ".",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Eggs",
+        "category": "PODCAST",
+        "date": "2016-02",
+        "description": "I ducklare, I was in a pretty fowl mood when I realized how little I knew about these little life nuggets. One of my favorite episodes to date. All stunned reactions are real.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Lightning",
+        "category": "PODCAST",
+        "date": "2016-02",
+        "description": "I was shocked that we knew as much as we did!",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Darwin's voyage to the Galapagos",
+        "category": "PODCAST",
+        "date": "2016-01",
+        "description": ".",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Other galaxies",
+        "category": "PODCAST",
+        "date": "2015-12",
+        "description": "I love space so much I won't even tarnish this episode with a tasteless pun.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: 3D printing",
+        "category": "PODCAST",
+        "date": "2015-12",
+        "description": "If you're into infinite numbers of everything then you're going to want to ink this one onto your to-do list.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: French Revolution",
+        "category": "PODCAST",
+        "date": "2015-11",
+        "description": "I don't want to (Ba)stille the show but history is not my strong suit and I kinda outperform Seth here. Kinda.",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Yetis",
+        "category": "PODCAST",
+        "date": "2015-11",
+        "description": "A pretty legendary performance for only the second episode. The best is yeti to come!",
+        "url": "https://inoverourheadsshow.com"
+    },
+    {
+        "title": "In Over Our Heads: Power steering",
+        "category": "PODCAST",
+        "date": "2015-11",
+        "description": "We're driving around in circles a bit but eventually cover some pretty interesting stuff. And by 'interesting' I mean completely speculative, and by 'stuff' I mean near-baseless assumptions.",
+        "url": "https://inoverourheadsshow.com"
+    }
+]

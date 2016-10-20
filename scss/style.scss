@@ -1,0 +1,39 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+$layout-side-column: 3;
+$layout-main-column: 12 - $layout-side-column;
+
+/* From https://coolors.co/354966-d0cfd4-171a21-7a93ac-92bcea */
+$color-font-main: #171A21;
+$color-font-action: #354966;
+$color-background-main: #fff;
+
+$breakpoint-large: 800px;
+
+body {
+    background-color: $color-background-main;
+    color: $color-font-main;
+
+    font-family: 'Catamaran', sans-serif;
+}
+
+a {
+    color: $color-font-action;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+// Icons: http://www.flaticon.com/packs/multimedia-set
+// @import 'flaticon';
+@import 'header';
+@import 'body';
