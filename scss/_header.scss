@@ -17,11 +17,6 @@ header {
                 min-height: $profile-pic-size;
             }
 
-            // width: $profile-pic-size * 0.6;
-            // min-width: $profile-pic-size * 0.6;
-            // height: $profile-pic-size * 0.6;
-            // min-height: $profile-pic-size * 0.6;
-
             margin-top: 4%;
             border: 1px solid $color-font-main;
             box-shadow: 1px 2px 2px lighten($color-font-main, 50%);
@@ -45,8 +40,12 @@ header {
         }
 
         h2 {
+            @include breakpoint($breakpoint-large) {
+                font-size: 1.7em;
+            }
+
             font-weight: normal;
-            font-size: 1.7em;
+            font-size: 1.3em;
             margin: 5px 0;
         }
     }

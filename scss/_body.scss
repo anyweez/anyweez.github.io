@@ -98,7 +98,7 @@ main {
 
         p {
             @include breakpoint($breakpoint-large) {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
 
             font-size: 0.9em;
@@ -119,13 +119,14 @@ main {
 
         img {
             @include breakpoint($breakpoint-large) {
-                width: 24px;
-                height: 24px;
+                // width: 24px;
+                // height: 24px;
                 margin-left: 14px;
             }
 
             width: 20px;
             height: 20px;
+            margin-left: 10px;
 
             vertical-align: top;
         }
