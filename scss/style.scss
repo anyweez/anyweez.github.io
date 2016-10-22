@@ -13,6 +13,10 @@ $color-background-main: #fff;
 
 $breakpoint-large: 800px;
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: $color-background-main;
     color: $color-font-main;
@@ -37,3 +41,4 @@ a:hover {
 // @import 'flaticon';
 @import 'header';
 @import 'body';
+@import 'background';

@@ -1,5 +1,12 @@
 [
     {
+        "title": "New site!",
+        "category": "CODE",
+        "date": "2016-10",
+        "description": "Yet another edition of pretty much the same website! Like most of the software I've been working on recently, the goal of this redesign is to *simplify* by moving much of the content itself off of the site and to really use this domain as a landing page for content elsewhere.",
+        "url": "https://medium.com/@anyweez/the-cave-of-wonders-e670477ff290"
+    },
+    {
         "title": "The Cave of Wonders",
         "category": "WRITING",
         "date": "2016-10",
@@ -14,13 +21,6 @@
         "description": "Sor is an attempt to create a platform for practicing Javascript with the least amount of user overhead possible. My goal was to take advantage of existing tools (IDE's, unit testing frameworks, etc) to make the tool easy to use and maintain.",
         "url": "https://sorjs.com",
         "highlight": true
-    },
-    {
-        "title": "New site!",
-        "category": "CODE",
-        "date": "2016-10",
-        "description": "Yet another edition of pretty much the same website! Like most of the software I've been working on recently, the goal of this redesign is to *simplify* by moving much of the content itself off of the site and to really use this domain as a landing page for content elsewhere.",
-        "url": "https://medium.com/@anyweez/the-cave-of-wonders-e670477ff290"
     },
     {
         "title": "In Over Our Heads: The Great Depression",
@@ -40,14 +40,14 @@
         "title": "Dodona",
         "category": "CODE",
         "date": "2016-09",
-        "description": "\"Bots\", they say. \"They're gonna be huge\", they say. I'm still a tad skeptical, but I do like the idea of building one. This was a weekend project to create a [League of Legends](http://na.leagueoflegends.com/) bot that can automatically give you basic intel on the team you're matched up against once the match begins. It is build using the Discord (Slack for gamers) API. It's still not ready for production but works really well for me!",
+        "description": "\"Bots\", they say. \"They're gonna be huge\", they say. I'm still a tad skeptical, but I do like the idea of building one. This was a weekend project to create a [League of Legends](http://na.leagueoflegends.com/) bot that can automatically give you basic information on the team you're matched up against once the match begins. It is build using the Discord (Slack for gamers) API. It's still not ready for production but works really well for me!",
         "url": "https://github.com/anyweez/edpaths"
     },
     {
         "title": "In Over Our Heads: Deserts",
         "category": "PODCAST",
         "date": "2016-08",
-        "description": "You may find this one a bit dry.",
+        "description": "Seems like a pretty dry topic until you really think about it, huh?",
         "url": "https://inoverourheadsshow.com"
     },
     {

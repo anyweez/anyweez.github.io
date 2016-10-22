@@ -36,4 +36,46 @@ window.addEventListener('load', function () {
     });
 
     document.querySelector('#all').addEventListener('click', () => showMore());
+
+    const body = document.querySelector('body');
+    const canvas = document.querySelector('#background');
+    canvas.setAttribute('width', body.scrollWidth);
+    canvas.setAttribute('height', body.scrollHeight);
+
+    const context = canvas.getContext('2d');
+
+    setInterval(() => {
+        if (Math.random() > 0.9) drip(context, Math.round(Math.random() * body.scrollWidth), 0);
+    }, 1000);
 });
+
+/** Background animation **/
+const RECT_DIMENSION = 20;
+const DRIP_DURATION = 1000;
+
+const colors = () => [150, 150, 100 + Math.round(Math.random() * 155)];
+const offset = max => Math.round(Math.random() * (offset * 2)) - offset; 
+
+function drip(ctx, x, y) {
+    let r, g, b = 0;
+    [r, g, b] = colors();
+
+    // Draw the rectangle
+    ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+    ctx.fillRect(x, y, RECT_DIMENSION, RECT_DIMENSION);
+
+    // Queue up the next rectangle drawing based on offsets from current position.
+    setTimeout(() => drip(ctx, x, y + RECT_DIMENSION * 1.5), DRIP_DURATION);
+
+    // Fading halfway through.
+    setTimeout(() => {
+        ctx.fillStyle = `rgba(255, 255, 255, .5)`;
+        ctx.fillRect(x - 1, y - 1, RECT_DIMENSION + 2, RECT_DIMENSION + 2);
+    }, DRIP_DURATION / 2);
+
+    // Disappearing.
+    setTimeout(() => {
+        ctx.fillStyle = `rgb(255, 255, 255)`;
+        ctx.fillRect(x - 1, y - 1, RECT_DIMENSION + 2, RECT_DIMENSION + 2);
+    }, DRIP_DURATION + (DRIP_DURATION * 0.25) + Math.random() * 500);
+}
