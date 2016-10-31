@@ -44,14 +44,14 @@ window.addEventListener('load', function () {
 
     const context = canvas.getContext('2d');
 
-    setInterval(() => {
-        if (Math.random() > 0.9) drip(context, Math.round(Math.random() * body.scrollWidth), 0);
-    }, 1000);
+    // setInterval(() => {
+    //     if (Math.random() > 0.9) drip(context, Math.round(Math.random() * body.scrollWidth), 0);
+    // }, 1000);
 });
 
 /** Background animation **/
 const RECT_DIMENSION = 20;
-const DRIP_DURATION = 1000;
+const DRIP_DURATION = 5000;
 
 const colors = () => [150, 150, 100 + Math.round(Math.random() * 155)];
 const offset = max => Math.round(Math.random() * (offset * 2)) - offset; 

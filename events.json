@@ -1,10 +1,17 @@
 [
     {
+        "title": "Wonder",
+        "category": "WRITING",
+        "date": "2016-10",
+        "description": "I may have finally figured out what I want to be when I grow up. To myself and everyone else: wonder without limits.",
+        "url": "https://medium.com/@anyweez/wonder-4e133bbf24bc"
+    },
+    {
         "title": "New site!",
         "category": "CODE",
         "date": "2016-10",
         "description": "Yet another edition of pretty much the same website! Like most of the software I've been working on recently, the goal of this redesign is to *simplify* by moving much of the content itself off of the site and to really use this domain as a landing page for content elsewhere.",
-        "url": "https://medium.com/@anyweez/the-cave-of-wonders-e670477ff290"
+        "url": "https://lukesegars.com"
     },
     {
         "title": "The Cave of Wonders",
