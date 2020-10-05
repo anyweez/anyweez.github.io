@@ -1,0 +1,107 @@
+
+/* Layout */
+
+div.body {
+    padding: 3vw 10vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+/* Element spacing */
+h1, h2 {
+    margin: 6px 0 0 0;
+}
+
+h3, p {
+    margin: 6px 0;
+}
+
+header {
+    margin-bottom: 42px;
+}
+
+ul.posts li {
+    margin-bottom: 28px;
+}
+
+ul.social {
+    list-style-type: none;
+    padding: 0;
+
+    font-size: 1.3em;
+    color: #265B6A;
+    margin: .4em 0 0 0;
+    display: flex;
+}
+
+ul.social li {
+    margin-right: .8vw;
+}
+
+/* Fonts & style */
+body {
+    background-color: #fdfdfd;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #265B6A;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+ul.posts {
+    padding: 0;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    width: 120px;
+    margin: 0 1.4vw 0 0;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
+
+div.content li {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+div.content ul li {
+    font-size: 1em;
+    line-height: 1.6em;
+
+}
+
+div.content h2, div.content h3 {
+    margin-top: 28px;
+    font-weight: 400;
+}
+
+main.single .header {
+    margin-bottom: 24px;
+}
+
+header img {
+    border-radius: 4px;
+}
