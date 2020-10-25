@@ -2,6 +2,7 @@
 title: "Cashcow: flexible financial simulations"
 date: 2020-10-04
 description: I've been doing a lot of financial modeling in spreadsheets recently and have hit some walls with scenario / "what if" planning. As a result I created a basic programming language that can be used for expressing financial models, with a specific focus on scenario planning. I've successfully transitioned my personal spreadsheets over and have a few other use cases that I'm excited to explore, and the potential audience for a tool like this is something I'm excited to learn more about.
+tags: ['projects', 'cashcow']
 draft: false
 ---
 

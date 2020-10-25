@@ -87,7 +87,7 @@ div.content li {
     line-height: 1.6em;
 }
 
-div.content ul li {
+div.content ul li, div.content ol li {
     font-size: 1em;
     line-height: 1.6em;
 

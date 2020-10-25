@@ -2,6 +2,7 @@
 title: "Wrapping up our podcast"
 date: 2016-10-30
 description: We've been working on [In Over Our Heads](https://inoverourheads.com) for about eleven months now, and we've decided to quit recording new episodes. We've taken this so much further than I thought we would've in some ways, and I've documented few victories and insights as we close this project out.
+tags: ['projects']
 draft: false
 ---
 

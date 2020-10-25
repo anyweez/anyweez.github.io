@@ -2,6 +2,7 @@
 title: "dropd: easy local file sharing"
 date: 2017-03-21
 description: dropd is an extremely simple web-based temporary file mailbox. I wrote it to simplify sharing files between computers at home.
+tags: ['projects']
 draft: false
 ---
 

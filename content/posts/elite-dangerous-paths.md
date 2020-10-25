@@ -2,6 +2,7 @@
 title: "Elite Dangerous Paths"
 date: 2016-10-14
 description: You know how when you go for a while without practicing your data structures you just feel an undying urge to put them to good use? The frontend for this project was my first foray into React and Redux, and the backend was designed to perform real-time routing among the millions and millions of discovered galaxy in the absolutely massive world of [Elite Dangerous](https://www.elitedangerous.com/).
+tags: ['projects']
 draft: false
 ---
 
