@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>lukesegars.com</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+
+<body>
+    <div class="body">
+        <header>
+            <div>
+                <img src="images/profile.jpg">
+            </div>
+            <div>
+                <h1>luke segars</h1>
+                <h2>Product leader &amp; learner, currently helping cities manage mobility at <a href="http://passportinc.com">@PassportHQ</a></h2>   
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/lukesegars"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/anyweez"><i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/anyweez"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/1527421/salis"><i class="fab fa-stack-overflow"></i></a>
+                    </li>
+                </ul>   
+            </div>
+                      
+        </header>
+
+
+<main class="single">
+    <div class="header">
+        <h3>Elite Dangerous Paths</h3>
+        <p class="date">October 14, 2016</p>
+    </div>
+
+    <div class="content"><p>Elite Dangerous is a popular spacefaring game that puts you in the middle of an absolutely massive universe (~400 billion explorable galaxies) with a variety of objectives to accomplish. Navigation is therefore pretty important to the game, and different ships and ship upgrades allow you to travel further than others, so different pilots will operate under different constraints based on the ship they're flying.</p>
+<p>The navigation tools in the game are good enough if you're trying to plan simple routes between points, but it's tough to do anything more complex using the in-game tools, including:</p>
+<ol>
+<li>Finding galaxies to meet one or more friends based on everyone's current locations (and ships/components)</li>
+<li>Planning more complex routes that include potential ship swaps (if efficient)</li>
+<li>Navigating around dangerous regions</li>
+</ol>
+<p>The purpose of this project was to create a tool that my friends and I could use to easy plan routes when the existing tools came up short. Technically, it's also an opportunity to dust of my data structures, and my first attempt at React + Redux. The search service itself is written in Golang. My repository is <a href="https://github.com/anyweez/edpaths">here</a>.</p>
+<h2 id="how-i-search">How I search</h2>
+<p>The search is based on <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search</a> of the universe graph; one of the more interesting parts of this search problem is that nodes (galaxies) are well-defined, but the available edges will depend on how far a specific ship can travel. For example, a cheaper ship may be able to jump three light years, and a more expensive ship may be able to jump eight light years. Paths that are six light years long will be available to the latter but not the former. This means that the edges available in the graph will vary from query to query.</p>
+<p>In order to accomodate a distinct set of edges, I divide the universe up into a 3D grid with each cell of the grid potentially containing thousands of individual galaxies. I only include galaxies from cells that are within the query's max jump range (i.e. three or eight light years above).</p>
+<p>This dramatically reduces the cost of an individual step in the search process and improves the performance by 100-500x on average queries. Furthermore, query-specific edge lists are generated dynamically and the full edge list is never stored in memory, so this approach makes it possible to run many queries at once without encountering memory issues.</p>
+<p>Lastly, ships have fuel limits and only certain galaxies offer refueling services; my results can't drop you off in the middle of a dark galaxy with no fuel, so I need to be &ldquo;fuel-aware&rdquo; with my routing. Each galaxy has a flag indicating whether fuel is available, and the search algorithm tracks fuel consumption as you go, termininating routes that result in an empty tank before you get to your destination.</p>
+<h2 id="additional-notes">Additional notes</h2>
+<p>More information is available on Github, but a few things worth calling out here:</p>
+<ul>
+<li>There are a number of community-provided data dumps that contain galaxy information; my search tool uses <a href="https://eddb.io/api">EDDB</a> which gives me a solid, community-powered source of truth for raw galaxy information.</li>
+<li>The system is designed for on-line interactions, i.e. performance matters. Most queries complete in under a second based on the Oct 2016 galaxy list, which is very sufficient for my use case.</li>
+<li>The UI is very light and insufficient for many of the use cases that I'd like to support, but the core routing logic is exposed via an endpoint that can be used with a variety of different frontends, including use cases that perform many searches in parallel.</li>
+</ul>
+</div>
+</main>

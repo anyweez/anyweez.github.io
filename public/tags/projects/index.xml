@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on Luke Segars</title>
+    <link>/tags/projects/</link>
+    <description>Recent content in projects on Luke Segars</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cashcow: flexible financial simulations</title>
+      <link>/posts/cashcow-intro/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cashcow-intro/</guid>
+      <description>Cashcow is a tool for simulating longer-term financial projections with a focus on answering questions that start with &amp;ldquo;what if.&amp;rdquo; I&#39;m currently using this for my own personal finances, but there are some other use cases I&#39;m interested to explore documented below.
+Example questions I want to be able to answer:
+ What if I start investing $250 / month into my mutual fund after my next raise instead of $100?</description>
+    </item>
+    
+    <item>
+      <title>dropd: easy local file sharing</title>
+      <link>/posts/dropd/</link>
+      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dropd/</guid>
+      <description>Copying files between home computers is surprisingly complicated. I often need to move something from one computer to another (audio or video recordings, photos, disk images, etc) and regularly struggle.
+ Dropbox et al work well and are my preferred option, but can be slow (esp. Dropbox) and a I almost never remember to delete things when I’m done. Flash drives are always there except when I need them. FTP servers and network drives are a great idea but hard to interface with, especially if I’m trying to do a one-time copy to or from a friend or visitors computer.</description>
+    </item>
+    
+    <item>
+      <title>Wrapping up our podcast</title>
+      <link>/posts/in-over-our-heads/</link>
+      <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/in-over-our-heads/</guid>
+      <description>We&#39;ve been working on In Over Our Heads for about eleven months now, and we&#39;ve decided to quit recording new episodes. We&#39;ve taken this so much further than I thought we would&#39;ve in some ways, and I&#39;ve documented few victories and insights as we close this project out. A full episode list is available at the bottom of this post.
+Victories  We originally set out to create five episodes of this show and we closed out with nineteen.</description>
+    </item>
+    
+    <item>
+      <title>Elite Dangerous Paths</title>
+      <link>/posts/elite-dangerous-paths/</link>
+      <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/elite-dangerous-paths/</guid>
+      <description>Elite Dangerous is a popular spacefaring game that puts you in the middle of an absolutely massive universe (~400 billion explorable galaxies) with a variety of objectives to accomplish. Navigation is therefore pretty important to the game, and different ships and ship upgrades allow you to travel further than others, so different pilots will operate under different constraints based on the ship they&#39;re flying.
+The navigation tools in the game are good enough if you&#39;re trying to plan simple routes between points, but it&#39;s tough to do anything more complex using the in-game tools, including:</description>
+    </item>
+    
+  </channel>
+</rss>

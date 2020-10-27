@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cashcow on Luke Segars</title>
+    <link>/tags/cashcow/</link>
+    <description>Recent content in cashcow on Luke Segars</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cashcow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cashcow: flexible financial simulations</title>
+      <link>/posts/cashcow-intro/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cashcow-intro/</guid>
+      <description>Cashcow is a tool for simulating longer-term financial projections with a focus on answering questions that start with &amp;ldquo;what if.&amp;rdquo; I&#39;m currently using this for my own personal finances, but there are some other use cases I&#39;m interested to explore documented below.
+Example questions I want to be able to answer:
+ What if I start investing $250 / month into my mutual fund after my next raise instead of $100?</description>
+    </item>
+    
+  </channel>
+</rss>
