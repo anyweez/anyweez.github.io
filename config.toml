@@ -1,12 +1,12 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Luke Segars"
-theme = "minimal"
+theme = "luke"
 googleAnalytics = ""
 
 [params]
     author = "Luke Segars"
-    description = "I like learning things. Currently helping cities manage mobility at @PassportHQ."
+    description = "Product leader & learner, currently helping cities manage mobility at [@PassportHQ](http://passportinc.com)"
     githubUsername = "anyweez"
     accent = "olive"
     showBorder = true

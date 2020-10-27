@@ -1,3 +1,5 @@
 # lukesegars.com
 
-Semi-permanent home for the source content of my website, whatever iteration it may be on. I'm on a quest to slim down the use case for my site to basically just a homepage (no content hosting). Code moves to Github, blog moves to Medium, project writeups to Instructables, and so on.
+I've gone to a fully static personal site, which is generated using [Hugo](https://gohugo.io) and hosted as static assets (HTML/CSS). Posts are written in Markdown and compiled into HTML by Hugo prior to positng online.
+
+This repo contains a Hugo project, including raw posts, that I compile into my actual web assets. Hugo is not included and needs to be downloaded and installed separately.

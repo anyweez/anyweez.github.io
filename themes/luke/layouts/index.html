@@ -1,0 +1,14 @@
+{{ partial "head" . }}
+{{ partial "header" . }}
+
+<main>
+    <ul class="posts">
+        {{ range .Site.RegularPages }}
+            <li class="post">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="date">{{ .PublishDate.Format "January 2, 2006" }}</p>
+                <p class="desc">{{ markdownify .Description }}</p>
+            </li>
+        {{ end }}
+    </ul>
+</main>
