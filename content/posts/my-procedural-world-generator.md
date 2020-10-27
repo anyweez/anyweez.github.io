@@ -1,6 +1,6 @@
 ---
 title: "My procedural world generator"
-date: 2020-10-26
+date: 2020-10-27
 description: I grew up interested in fantasy worlds and have been hooked on the idea of building them since I was in middle school. Programmatically generating these worlds is one of my go-to projects when I feel like coding, and I've been merging a few of these efforts into a single codebase that I can add onto every now and then to gradually get better results.
 tags: ['projects', 'glimpse']
 draft: false
