@@ -6,10 +6,19 @@
     <description>Recent content in projects on Luke Segars</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My procedural world generator</title>
+      <link>/posts/my-procedural-world-generator/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-procedural-world-generator/</guid>
+      <description>I grew up interested in fantasy worlds and have been hooked on the idea of building them since I was in middle school. Programmatically generating these worlds is one of my go-to projects when I feel like coding, and I&#39;ve been merging a few of these efforts into a single codebase that I can add onto every now and then to gradually get better results. It&#39;s way too fun, even if the world quality still isn&#39;t very good yet.</description>
+    </item>
     
     <item>
       <title>Cashcow: flexible financial simulations</title>

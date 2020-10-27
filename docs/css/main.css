@@ -105,3 +105,18 @@ main.single .header {
 header img {
     border-radius: 4px;
 }
+
+div.content p img {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 60%;
+    min-width: 300px;
+}
+
+div.content p > img + em {
+    display: block;
+    text-align: center;
+    font-size: .9em;
+
+    margin-top: 4px;
+}

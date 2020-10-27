@@ -3,17 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-10-24T00:00:00+00:00</lastmod>
+    <loc>/tags/glimpse/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/making-predictable-decisions/</loc>
-    <lastmod>2020-10-24T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/my-procedural-world-generator/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/projects/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/making-predictable-decisions/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,16 +44,6 @@
   
   <url>
     <loc>/posts/cashcow-intro/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/projects/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url>
   
