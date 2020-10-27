@@ -6,7 +6,7 @@ googleAnalytics = ""
 
 [params]
     author = "Luke Segars"
-    description = "Product leader & learner, currently helping cities manage mobility at [@PassportHQ](http://passportinc.com)"
+    description = "Product leader & learner, currently helping cities manage mobility at [@PassportHQ](https://passportinc.com)"
     githubUsername = "anyweez"
     accent = "olive"
     showBorder = true
