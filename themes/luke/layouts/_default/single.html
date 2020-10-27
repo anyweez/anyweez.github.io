@@ -1,0 +1,11 @@
+{{ partial "head" . }}
+{{ partial "header" . }}
+
+<main class="single">
+    <div class="header">
+        <h3>{{ .Title }}</h3>
+        <p class="date">{{ .PublishDate.Format "January 2, 2006" }}</p>
+    </div>
+
+    <div class="content">{{ .Content }}</div>
+</main>

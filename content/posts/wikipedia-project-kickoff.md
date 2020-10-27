@@ -1,7 +1,8 @@
 ---
 title: "Wikipedia Project: Kickoff"
 date: 2020-07-25
-tags: ["wikipedia-project" ]
+description: Test description
+tags: ['wikipedia', 'projects']
 draft: true
 ---
 
