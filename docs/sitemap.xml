@@ -3,32 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/foundations-of-world-generation/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/glimpse/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/my-procedural-world-generator/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/projects/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/my-procedural-world-generator/</loc>
     <lastmod>2020-10-27T00:00:00+00:00</lastmod>
   </url>
   

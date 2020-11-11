@@ -6,10 +6,20 @@
     <description>Recent content in glimpse on Luke Segars</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/glimpse/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Foundations of world generation</title>
+      <link>/posts/foundations-of-world-generation/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/foundations-of-world-generation/</guid>
+      <description>Over the last two weeks I&#39;ve refined the goals of my own world generator and gone back to the drawing board on how to be successful. This has involved reading up on a ton of prior work, the best of which is provided below.
+Refined goal My goal is to generate worlds that look good when printed; this project will be successful once I can generate enough high-quality maps to make a coffee table book that I don&#39;t have to hide in a drawer.</description>
+    </item>
     
     <item>
       <title>My procedural world generator</title>
