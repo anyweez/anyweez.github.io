@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>lukesegars.com</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+        <link rel="stylesheet" href="/css/main.css">
+        
+    </head>
+
+<body>
+    <div class="body">
+        <header>
+            <div>
+                <img src="/images/profile.jpg">
+            </div>
+            <div>
+                <h1>luke segars</h1>
+                <h2>Product leader &amp; learner, currently helping cities manage mobility at <a href="https://passportinc.com">@PassportHQ</a></h2>   
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/lukesegars"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/anyweez"><i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/anyweez"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/1527421/salis"><i class="fab fa-stack-overflow"></i></a>
+                    </li>
+                </ul>   
+            </div>
+                      
+        </header>
+
+
+<main class="single">
+    <div class="header">
+        <h3>Glimpse: mid-Nov update</h3>
+        <p class="date">November 20, 2020</p>
+    </div>
+
+    <div class="content"><p>We've made progress! <a href="https://lukesegars.com/posts/my-procedural-world-generator">Glimpse</a> is starting to come to life.</p>
+<p><img src="/Glimpse-MidNov-Demo1.png" alt="Glimpse mid-Nov">
+<em>New worlds are far more interesting than they were <a href="/posts/foundations-of-world-generation/">last week</a>. White dots are cities, heatmap is elevation.</em></p>
+<p>The new maps have a lot of the improvements I laid out in my <a href="/posts/foundations-of-world-generation/">last article</a>. There's still a lot of work to do artistically on making these ready to print, but feature-wise we're getting pretty close to v1. Primary improvements are:</p>
+<ul>
+<li><strong>Forests, lakes, and channels.</strong> Forests (green triangles) are still pretty rudimentary but have some fairly believable clustering behavior and tend to vary a lot from map to map; I probably won't make any massive improvements until biomes and/or climates exists. Lakes worked out really well - they're formed by rainfall simulations that determine where water pools up (watersheds). In the map above you can see a lake in the middle of the mountainous island on the left that formed between all the mountains, <a href="https://en.wikipedia.org/wiki/Interlaken">Interlaken style</a> &ndash; so cool. Channels began to form somewhat naturally when I introduced lakes / rainfall simulations.</li>
+<li><strong>Cities and named points of interest.</strong> Three important topics to talk about here: cultures, languages, and POI detection. See the section below for more information as this is both really cool today and has a lot of future potential.</li>
+<li><strong>Better elevation variety.</strong> My older maps supported elevation across multiple continents but every continent ended up having very similar topological properties - if one was mountainous, they were all mountainous. This makes sense for maps representing smaller areas, but not for world-scale maps. I've adjusted elevation to be more of a local property vs global property, which makes the maps a lot more visually interesting.</li>
+<li><strong>Increased resolution.</strong> My older maps look a lot blockier than these do; the blockiness is determined by the number of cells in the map &ndash; more smaller cells are less noticeable than fewer larger cells. I made a number of performance improvements to make it reasonable to generate larger maps with an emphasis on scaling into very large maps. The cells shouldn't be visible at all in larger &lsquo;print quality&rsquo; maps.</li>
+<li><strong>Vector output.</strong> I completely switched out the old renderer (pyplot-based) because I was running into limits with it; one of the most important is that I need to be able to export to SVG format both for higher-resolution printing and the ability to zoom to potentially include content focused on particular regions in the final product. The new renderer is Cairo-based and can output PNG or SVG format and offers much more visual flexibility.</li>
+<li><strong>New color scheme.</strong> This wasn't that much work but made the maps look a lot better, and is encouraging that further refinement will keep making the maps look better. The color scheme is currently based around a green-to-red elevation heatmap, and I also introduced a color for deeper water to break up the boring blue seas.</li>
+</ul>
+<p><a href="https://github.com/anyweez/glimpse/wiki">Technical notes</a> will live on Github once I take a breather.</p>
+<h3 id="more-on-cities-and-named-points-of-interest">More on cities and named points of interest</h3>
+<p>Hit some serious flow with this one; in the span of 24hrs I conceptualized and implemented cultures, languages, and points of interest.</p>
+<p>In my simulation, a culture is a combination of settlement rules (where cities form) and a language (used for naming). Any map can have any number of cultures, and cultures can represent anything from mythical races (dwarves who prefer mountain life, elves who always live in forests, and seafaring humans that live by the coast) to distinct cultures of people &ndash; it's quite flexible. When placing cities, I'm scoring a random selection of cells according to the culture's settlement rules &ndash; I started with <a href="http://mewo2.com/notes/terrain/">this description</a> but abstracted it further into three core ideas that every culture has:</p>
+<ol>
+<li>a <strong>survivability score</strong> (what do you need to thrive, and does this place have it?); in the map above, the only constraint is that the culture must live on land.</li>
+<li>an <strong>economy score</strong> (what makes this place thrive, and does this place have it?); in the map above, its beneficial but not required to have other cities reachable over land.</li>
+<li>a <strong>threat score</strong> (what decreases odds of survival, and does this place have it?); in the map above, its dangerous to have other cities too close by.</li>
+</ol>
+<p>Languages were even more fun. My original approach here was to manually create a list of acceptable names, but I found this produced incredibly dull results, especially if I need to populate an entire book. I started looking around for other approaches and quickly stumbled across <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">recurrent neural networks</a> (RNNs), which I've studied but never used. They're fairly well-known for generating names (or more generally, logical character sequences) given many examples, and I found a <a href="https://github.com/tadeaspaule/universal-name-generator">very useful example</a> built off of Tensorflow, Google's publicly available machine learning library, that I've intergrated into my own project. I searched around and found lists of hundreds of Scottish town names (that's almost medieval, right?) and am now generating a completely dynamic set of names for each map based off of that training set. All of the Scottish town names are part of my &ldquo;English&rdquo; language, but I can also create any number of other languages (real or fantasy) based on distinct training sets. Watch out, Tolkien.</p>
+<p>Naturally, my pulse was racing so I decided that I wanted to use these languages to name things like mountains and lakes as well. The only problem was that thus far I've only been drawing elevation and dropping water on the map &ndash; there was really no such thing as a &ldquo;mountain&rdquo; or a &ldquo;lake&rdquo;. I introduced a new module that scans over the map once it's been built to detect points of interest and then assigns names to them based on the nearest culture's language &ndash; for example, if a mountain is near an English-speaking town the I assume that the mountain has an English name and I use that culture's RNN to generate it.</p>
+<p>I still need to improve the language quality (i.e. get more training examples), but here are some names that the English RNNs produced for the map above. Each one is assigned to a particular city/lake/mountain.</p>
+<ul>
+<li>New Fochara</li>
+<li>Dunmahog</li>
+<li>Lochalar</li>
+<li>Stranran Harbor</li>
+<li>Lake Obaine</li>
+<li>Lake Nairn</li>
+<li>Mount Lolligh</li>
+</ul>
+<p>Pretty darn fun.</p>
+<h3 id="north-star">North star</h3>
+<p>I've also been thinking a bit more about the product itself (coffee table book) and I'm going to reach out to some friends who enjoy worldbuilding (D&amp;D, roleplaying, etc) to see if they want to establish some lore for these worlds. I think the book will be a lot more interesting if there's some &ldquo;history&rdquo; to each place and not just the visuals themselves.</p>
+<p>There are only a few key features left, though there's still a good bit of time required to polish the system to improve quality. My current plan is to finish getting features implemented and then turning my full attention to quality. Remaining features include:</p>
+<ul>
+<li>Rivers</li>
+<li>Basic biomes</li>
+<li>City sizes (capitals at minimum)</li>
+<li>New print-focused visual theme and styling</li>
+</ul>
+<p>I'm also going to be accepting feature requests from my writers if the feature will significantly improve the quality of the lore.</p>
+</div>
+</main>

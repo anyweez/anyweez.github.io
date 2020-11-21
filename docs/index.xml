@@ -6,10 +6,21 @@
     <description>Recent content on Luke Segars</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Glimpse: mid-Nov update</title>
+      <link>/posts/glimpse-mid-nov/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/glimpse-mid-nov/</guid>
+      <description>We&#39;ve made progress! Glimpse is starting to come to life.
+New worlds are far more interesting than they were last week. White dots are cities, heatmap is elevation.
+The new maps have a lot of the improvements I laid out in my last article. There&#39;s still a lot of work to do artistically on making these ready to print, but feature-wise we&#39;re getting pretty close to v1. Primary improvements are:</description>
+    </item>
     
     <item>
       <title>Foundations of world generation</title>
