@@ -1,7 +1,7 @@
 ---
 title: "Glimpse: early-Dec update"
 date: 2020-12-07
-description: We've made progress! Glimpse is starting to come to life. My latest update include lakes, forests, cities, named points of interest, higher resolution maps, vector outputs, and a new color scheme.
+description: Improved continent formation, prettier oceans, rivers, biomes, place labels, and other exciting additions. Its been a busy couple of weeks!
 draft: false
 ---
 
