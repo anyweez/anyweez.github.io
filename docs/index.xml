@@ -6,10 +6,21 @@
     <description>Recent content on Luke Segars</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Glimpse: early-Dec update</title>
+      <link>/posts/glimpse-early-dec/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/glimpse-early-dec/</guid>
+      <description>Lots of exciting progress since the mid-Nov update &amp;ndash; here are some shots of the latest:
+                  There&#39;s a lot of new stuff here, and some things exist but aren&#39;t visible yet. Notable additions:
+ Completely changed how continents are being generated. My original plan was to double down on my plate tectonics-based approach, but it wasn&#39;t producing satisfying results, so I backtracked and did a bunch of reading on how to make terrain out of random noise (simplex noise, specifically).</description>
+    </item>
     
     <item>
       <title>Glimpse: mid-Nov update</title>

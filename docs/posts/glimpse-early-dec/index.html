@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>lukesegars.com</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+        <link rel="stylesheet" href="/css/main.css">
+        
+    </head>
+
+<body>
+    <div class="body">
+        <header>
+            <div>
+                <img src="/images/profile.jpg">
+            </div>
+            <div>
+                <h1>luke segars</h1>
+                <h2>Product leader &amp; learner, currently helping cities manage mobility at <a href="https://passportinc.com">@PassportHQ</a></h2>   
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/lukesegars"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/anyweez"><i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/anyweez"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/1527421/salis"><i class="fab fa-stack-overflow"></i></a>
+                    </li>
+                </ul>   
+            </div>
+                      
+        </header>
+
+
+<main class="single">
+    <div class="header">
+        <h3>Glimpse: early-Dec update</h3>
+        <p class="date">December 7, 2020</p>
+    </div>
+
+    <div class="content"><p>Lots of exciting progress since the <a href="http://localhost:1313/posts/glimpse-mid-nov">mid-Nov update</a> &ndash; here are some shots of the latest:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://anyweez.github.io/glimpse/img/terrain-1.png" alt=""></td>
+<td><img src="https://anyweez.github.io/glimpse/img/terrain-2.png" alt=""></td>
+</tr>
+<tr>
+<td><img src="https://anyweez.github.io/glimpse/img/terrain-3.png" alt=""></td>
+<td><img src="https://anyweez.github.io/glimpse/img/terrain-4.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>There's a lot of new stuff here, and some things exist but aren't visible yet. Notable additions:</p>
+<ul>
+<li><strong>Completely changed how continents are being generated.</strong> My original plan was to double down on my plate tectonics-based approach, but it wasn't producing satisfying results, so I backtracked and did a bunch of reading on how to make terrain out of random noise (<a href="https://en.wikipedia.org/wiki/Simplex_noise">simplex noise</a>, specifically). I also modified the generator so that the land never reaches the edges of the map because I think it looks better.</li>
+<li><strong>Ocean depth shading.</strong> One side effect of the new continent generation process is that I have a better depth map for oceans, which allows me to do nicer-looking shading. Deep water is darker, and shallow water is lighter &ndash; including lakes!</li>
+<li><strong>Rivers and biomes.</strong> The maps above don't demonstate rivers (bug?) but some maps have them &ndash; they're generated based on watersheds and always flow into other bodies of water. <em>Biomes</em> may be the bigggest unsung hero of this release because they're largely working behind the scenes. There are six biomes: tundra, boreal forest, temperate grasslands, temperate forests, desert, and rainforests. Forests are much more likely to grow in certain biomes, and people have strong preferences for building cities in certain biomes as well.</li>
+<li><strong>Rendering place labels</strong>. City names are now visible on the map, but I still need to render mountain and lake names. I also added in some clever logic so that place name labels won't hang off the map or overlap with each other &ndash; see &ldquo;New Jenouth&rdquo; in the top right image for an example of a label repositioning itself to stay on the map.</li>
+<li><strong>Improved color scheme</strong> though a number of design challenges still exist. I'm tempted to try a test print on this color scheme (vs the original black and white plan) to see how it looks. Beyond the color scheme, I need to make the lines less blocky and figure out how I want to render specific biomes&hellip;I think it'd be nice to get deserts and tundra to be visible at a minimum, but tree density does a decent job with the others.</li>
+</ul>
+<p>Another really great, more technical accomplishment milestone is that I refactored the whole application into a series of plug-ins that operate (mostly) independently of each other. The two big benefits are (a) its much easier to improve individual pieces of the system without breaking others, and (b) adding new features is typically a matter of adding a new plugin which can build off of data generated by existing plugins. This has made it much easier to start improving the quality of individual systems without getting lost.</p>
+<h3 id="north-star">North star</h3>
+<p>Not a ton of major features left to build, and I'm going to start learning more about producing the physical book while I finish out some of these.</p>
+<ul>
+<li>I still need to get some notion of cities sizes implemented. I've started this but haven't made meaningful progress, and I'm not going to worry about making it perfect. &lsquo;Good enough&rsquo; is fine for this one.</li>
+<li>Print testing the current visuals. I know I want to make some improvements to the renderer, but I want to test this color scheme to see if it looks good on paper&hellip;my guess is there's still work to do tuning colors in addition to the more involved renderer improvements.</li>
+<li>A decent number of renderer quality improvements to improve the visual appearance of the map.</li>
+<li>I've got some friends on board to do some writing &ndash; woohoo!</li>
+</ul>
+<p>If time allows I may add in road networks, but that's not &ldquo;core&rdquo; at this point.</p>
+</div>
+</main>

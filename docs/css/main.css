@@ -120,3 +120,7 @@ div.content p > img + em {
 
     margin-top: 4px;
 }
+
+table img {
+    width: 100%;
+}
