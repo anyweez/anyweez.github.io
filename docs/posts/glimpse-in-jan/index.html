@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>lukesegars.com</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+        <link rel="stylesheet" href="/css/main.css">
+        
+    </head>
+
+<body>
+    <div class="body">
+        <header>
+            <div>
+                <img src="/images/profile.jpg">
+            </div>
+            <div>
+                <h1>luke segars</h1>
+                <h2>Product leader &amp; learner, currently helping cities manage mobility at <a href="https://passportinc.com">@PassportHQ</a></h2>   
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/lukesegars"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/anyweez"><i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/anyweez"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/1527421/salis"><i class="fab fa-stack-overflow"></i></a>
+                    </li>
+                </ul>   
+            </div>
+                      
+        </header>
+
+
+<main class="single">
+    <div class="header">
+        <h3>Glimpse in Jan</h3>
+        <p class="date">January 24, 2021</p>
+    </div>
+
+    <div class="content"><p>I'm happy to report that I've completed all pre-print features (!!). With the finish line drawing closer, the remaining work is in print and writing with a few quality improvements here and there. My <a href="/posts/glimpse-early-dec/">last update</a> was about six weeks ago, and here's what the latest version looks like:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://anyweez.github.io/glimpse/img/KLFDXT.png" alt=""></td>
+<td><img src="https://anyweez.github.io/glimpse/img/HPY5UZ.png" alt=""></td>
+</tr>
+<tr>
+<td><img src="https://anyweez.github.io/glimpse/img/SB97WV.png" alt=""></td>
+<td><img src="https://anyweez.github.io/glimpse/img/THY80Z.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>This version includes the features I had on my roadmap in my last update (variable city sizes based on population, a more print-friendly grayscale color scheme that uses shading instead of color, and a handful of visual rendering improvements). I also made some minor improvements to name generation that ended up having a surprisingly positive impact on quality &ndash; I'm rarely throwing out maps due to low name quality now, which was not true in Dec. A few highlights:</p>
+<ul>
+<li>Last night I added a feature that <strong>scales a city's label size based on its population</strong>; this makes denser maps with lots of labels look a lot better. Previously, maps that have 15+ labels that have no precedence looked like a mess, but the relatively minor change in label size is effective at drawing some contrast.</li>
+<li>I'm really happy with the <strong>shading on coastlines</strong>. This horizontal hatching style is fairly common in online mapmaking forums (yep, I visit those now) and I think it works well on my greyscale map style.</li>
+<li>I actually got <strong>city sizing</strong> working in a few hours and it works pretty well though I'm sure I'll improve it over time. In short, I'm using a relatively simple population model for each city that accounts for natural population growth and migration. The former takes into account a <a href="https://en.wikipedia.org/wiki/Carrying_capacity">carrying capacity</a> based on the land around the city (simulating how much food could be produced), making cities in better locations usually end up with larger populations. The latter simulates the movement of people to nearby, more desirable locations which typically prevents many large cities from existing beside each other. More info is coming to the <a href="https://github.com/anyweez/glimpse/wiki">project wiki</a> if you're interested.</li>
+</ul>
+<p>I also spent some time on iconography this month, which felt necessary after transitioning to grayscale; the grayscale maps <em>without</em> iconography looked pretty flat. I'm still not happy with the iconography that exists, but I'm not sure its worth putting more time into prior to printing since iconography is slow-going for me.</p>
+<h2 id="next-up">Next up</h2>
+<p>This week I'm going to send some sample maps to Fedex to print out on a few different paper weights and colors to determine the requirements for the full print. Once I've confirmed that I'm happy with how the maps look on paper, I'm going to start working on layout while I pass some maps over to the writers I've identified. With any luck, we can get everything put together to ship to the printers without much struggle.</p>
+<p>Though I'm sure more surprises will pop up, I feel fairly close to the finish line for this phase of the project!</p>
+</div>
+</main>
